@@ -1,0 +1,88 @@
+.news-wrapper{
+    &.news-page{
+     background: linear-gradient(180deg, rgba(227, 182, 107, 0.12) -37.25%, rgba(227, 182, 107, 0) 100%);
+    padding-top: 22px;
+    padding-bottom: 200px;
+    }
+    .media-tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 11px;
+    }
+    .noContent {
+        display: none;
+    }
+    .more__button {
+            margin: 0 auto;
+            width: 100%;
+            text-align: center;
+        .more__btn{
+            border: 1px solid #D9D9D9;
+            border-radius: 30px;
+            font-weight: 400;
+            font-size: 16px;
+            font-family: "Poppins_Medium";
+            line-height: 24px;
+            color: #010345;
+            padding: 8px 42px;
+            background-color: transparent;
+            transition: all 0.5s ease;
+            
+            padding: 16px 32px;
+            margin-top: 60px;
+            border: 1px solid #E3B66B;
+            border-radius: 12px;
+            font-family: "Poppins";
+            font-style: normal;
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 21px;
+            text-align: center;
+            color: #E3B66B;
+            
+        }
+    }
+    .media-wrapper--title{
+        h5{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 44px;
+            line-height: 96px;
+            color: #1F2024;
+        }
+    }
+    &--tab{
+        .media-tabs{
+            li{
+                &:first-child{
+                    margin-right: unset;
+                }
+            }
+        }
+        .news-tabs-content{
+            .content-item {
+                display: none;
+            .items{
+                display: flex;
+                flex-wrap: wrap;
+                row-gap: 40px;
+                column-gap: 32px;
+                .item{
+                    display: none;
+                    width: 410px;
+                    img{
+                        width: 410px;
+                        @include mobile{
+                            width: 100%;
+                        }
+                    }
+                    @include mobile{
+                        width: 100%;
+                    }
+                }
+            }
+        }
+        }
+    }
+}
