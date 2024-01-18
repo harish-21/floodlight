@@ -1,0 +1,221 @@
+.calendar-content{
+    background: #FFFFFF;
+    border: 1px solid #EFF2F4;
+    box-shadow: 0px 30px 82px rgba(0, 0, 0, 0.05);
+    border-radius: 16px;
+    padding: 30px;
+    overflow: auto;
+    width: 82%;
+    margin: 0 auto;
+    @include mobile{
+        width: 100%;
+    }
+        tbody, td, tfoot, th, thead, tr {
+        padding: 20px!important;
+    }
+    table{
+        width: 1000px;
+    }
+    th {
+        padding: 10px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #888A8D;
+      }
+    tr{
+        // &:nth-child(9),&:nth-child(15),&:nth-child(21),
+        // &:nth-child(23),&:nth-child(29),&:nth-child(35),&:nth-child(37),&:nth-child(43){
+        //     border-bottom: 1px solid red;
+        // }
+        td{
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #1F2024;
+            &:nth-child(1){
+                background: #EFF2F4;
+                border-radius: 10px;
+                border-top-left-radius: 10px;
+                border-bottom-left-radius: 10px;
+                width: 46px;
+                padding: unset!important;
+                padding-left: 19px!important;
+                padding-right: 8px!important;
+                span{
+                    font-style: normal;
+                    font-weight: 600;
+                    font-size: 20px;
+                    line-height: 30px;
+                    text-align: center;
+                    color: #1F2024;
+                    padding-right: 8px;
+                }
+            }
+            &:nth-child(4){
+              border-top-right-radius: 10px;
+              border-bottom-right-radius: 10px;
+              font-family: 'Poppins';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 21px;
+              color: #1F2024;
+            }
+            &:nth-child(3){
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 21px;
+                color: #1F2024;
+            }
+        }
+        &:nth-child(1){
+            td{
+                &:nth-child(1){
+                    background-color:unset;
+                }
+            }
+        }
+        &:nth-child(2){
+            border-bottom: 1px solid #EFF2F4;
+            td{
+                &:nth-child(1){
+                    background-color:unset;
+                }
+            }
+        }
+        &:nth-child(3){
+            height: 8px;
+        }
+        &:nth-child(4),&:nth-child(28),&:nth-child(52),&:nth-child(62){
+            background: #FBF3E7;
+            border-radius: 10px;
+            border-top-left-radius: 10px;
+            border-bottom-left-radius: 10px;
+            width: 46px;
+            padding: unset!important;
+            padding-left: 19px!important;
+            padding-right: 8px!important;
+            td{
+                &:nth-child(1){
+                    background-color: #FBF3E7;
+                    border-top-right-radius: unset;
+                    border-bottom-right-radius: unset;
+                }
+            }
+        }
+        &:nth-child(5){
+            height: 5px;
+        }
+        &:nth-child(6){
+            height: 0px;
+        }
+        &:nth-child(8),&:nth-child(10){
+            height: 5px;
+            padding: unset!important;
+            td{
+              padding: unset!important;
+            }
+        }
+        &:nth-child(12){
+            height: 8px;
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(13){
+            height: 10px;
+        }
+        &:nth-child(15){
+            height: 10px;
+        }
+        &:nth-child(17),&:nth-child(19),&:nth-child(22),&:nth-child(24),&:nth-child(26),
+        &:nth-child(29),&:nth-child(32),&:nth-child(34),&:nth-child(36),&:nth-child(39),
+        &:nth-child(41),&:nth-child(43),&:nth-child(46),&:nth-child(48),&:nth-child(50),
+        &:nth-child(53),&:nth-child(56),&:nth-child(58),&:nth-child(60){
+            height: 10px;
+        }
+        &:nth-child(19){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(20){
+            height: 10px;
+        }
+        &:nth-child(26){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(27){
+            height: 10px;
+        }
+        &:nth-child(29){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(30){
+            height: 10px;
+        }
+        &:nth-child(36){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(37){
+            height: 10px;
+        }
+        &:nth-child(43){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(44){
+            height: 10px;
+        }
+        &:nth-child(50){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(51){
+            height: 10px;
+        }
+        &:nth-child(53){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(54){
+            height: 10px;
+        }
+        &:nth-child(60){
+            border-bottom: 1px solid #EFF2F4;
+        }
+        &:nth-child(61){
+            height: 10px;
+        }
+        &:nth-child(even){
+            // padding: unset!important;
+            td{
+                // padding: unset!important;
+                // &:nth-child(1){
+                //     background-color:unset;
+                // }
+              }
+        }
+        &:nth-child(3){
+          padding: unset!important;
+          td{
+            padding: unset!important;
+            &:nth-child(1){
+                background-color:unset;
+            }
+          }
+        }
+        &:nth-child(2){
+            background: #FBF3E7;
+            border-radius: 10px;
+            td{
+                &:nth-child(1){
+                    background-color:unset;
+                    border-top-right-radius: unset;
+                    border-bottom-right-radius: unset;
+                }
+              }
+        }
+    }
+
+}
